@@ -40,15 +40,15 @@ class ApiRequestLogRepository
             $modelData = new $this->apiRequestLog;
 
             // $modelData->user_id = $data['user_id'];
-            $modelData->ip_address = isset($data['ip_address']) ? $data['ip_address'] : null;
+            $modelData->ip_address               = isset($data['ip_address']) ? $data['ip_address'] : null;
             $modelData->input_virtual_account_id = isset($data['input_virtual_account_id']) ? $data['input_virtual_account_id'] : null;
-            $modelData->request_id = $data['request_id'];
-            $modelData->request_for = isset($data['request_for']) ? $data['request_for'] : null;
-            $modelData->header = isset($data['header']) ? $data['header'] : null;
-            $modelData->request_body = isset($data['request_body']) ? $data['request_body'] : null;
-            $modelData->response = isset($data['response']) ? $data['response'] : null;
-            $modelData->response_code = isset($data['response_code']) ? $data['response_code'] : null;
-            $modelData->meta = isset($data['meta']) ? $data['meta'] : null;
+            $modelData->request_id               = $data['request_id'];
+            $modelData->request_for              = isset($data['request_for']) ? $data['request_for'] : null;
+            $modelData->header                   = isset($data['header']) ? $data['header'] : null;
+            $modelData->request_body             = isset($data['request_body']) ? $data['request_body'] : null;
+            $modelData->response                 = isset($data['response']) ? $data['response'] : null;
+            $modelData->response_code            = isset($data['response_code']) ? $data['response_code'] : null;
+            $modelData->meta                     = isset($data['meta']) ? $data['meta'] : null;
             $modelData->save();
 
             return $modelData;

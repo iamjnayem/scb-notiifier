@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ScbNotifyPostRequest;
-use App\Services\NotifierService;
-use App\Services\ScbNotifyServices;
 use Illuminate\Http\Request;
+use App\Services\NotifierService;
+use Illuminate\Support\Facades\Log;
+use App\Http\Requests\ScbNotifyPostRequest;
 
 class NotifyController extends Controller
 {
@@ -13,12 +13,33 @@ class NotifyController extends Controller
 
     public function __construct(NotifierService $notifierService)
     {
-        $this->notifierServices = $notifierService;
+        $this->notifierService = $notifierService;
     }
 
 
+    /**
+     * policyDetails function
+     *
+     * @param ScbNotifyPostRequest $request
+     * @return array
+     */
+
     public function notify(ScbNotifyPostRequest $request)
     {
-        $this->notifierService->notify($request);
+        $logTag = $request->request_id;
+        $logLabel = 'Scb Notify Controller';
+
+        try {
+            Log::info(__formatDebugLog($logTag, $logLabel . ' request params ', $request->all()));
+            $response = $this->notifierService->notify($request);
+            Log::info(__formatDebugLog($logTag, $logLabel . ' response From Controller ', $response));
+            return $response;
+        } catch (Exception $e) {
+
+            Log::error(__formatDebugLog($logTag, $logLabel . ' exception ', __METHOD__ . ' ' . $e->getLine() . ' ' . $e->getMessage()));
+            $errorResponse = getResponseStatus('500');
+            Log::info(__formatDebugLog($logTag, $logLabel . ' response From Controller ', $errorResponse));
+            return $errorResponse;
+        }
     }
 }

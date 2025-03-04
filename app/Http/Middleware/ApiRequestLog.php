@@ -40,7 +40,7 @@ class ApiRequestLog
             $data = [
                 'ip_address' => getClientDynamicIP(),
                 'request_id' => isset(request()->request_id) ? request()->request_id : null,
-                'input_virtual_account_id' => isset(request()->input_virtual_account_id) ? request()->input_virtual_account_id : null,
+                'input_virtual_account_id' => isset(request()->virtualAccountId) ? request()->virtualAccountId : null,
                 'request_for' => last(request()->segments()),
                 'header' => $request->header(),
                 'request_body' => $request->all(),

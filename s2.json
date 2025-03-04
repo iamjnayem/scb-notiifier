@@ -1,0 +1,125 @@
+{
+    "groupId": "AINABC01",
+    "accountIdentifier": {
+        "accountId": "53105112345",
+        "currencyCode": {
+            "isoCode": "INR"
+        },
+        "bankCode": "SCBLINBBXXX"
+    },
+    "eventDate": "2020-12-11",
+    "transactionIdentifier": {
+        "type": "Other",
+        "identifier": "202012110337614"
+    },
+    "adviceType": "Credit",
+    "valueDate": "2020-12-11",
+    "virtualAccountId": "JUPIIGE1538",
+    "accountName": "JUPITER AVIATION LIMITED",
+    "transactionCode": "063",
+    "baiCode": "063",
+    "transactionDescription": "Inward Credit -IMPS",
+    "postExecutionBalance": {
+        "currencyCode": "INR",
+        "amount": 1985920
+    },
+    "preExecutionBalance": {
+        "currencyCode": "INR",
+        "amount": 1980920
+    },
+    "transactionFreeText": [
+        "IMPS/P2A/034610992057/0000000000",
+        "JUP1538",
+        "MARS TOURS AND TRAVELS",
+        "9229811/115205000543",
+        "",
+        ""
+    ],
+    "transactionExtendedFreeText": [
+        "eBBS",
+        "JUPIIGE1538",
+        "VA",
+        "IMPS",
+        "",
+        ""
+    ],
+    "transactionMultiLingualFreeText": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "transactionAmount": {
+        "currencyCode": "INR",
+        "amount": 5000
+    },
+    "clientIdentifier": {
+        "type": "Other",
+        "identifier": ""
+    },
+    "externalIdentifier": {
+        "type": "Other",
+        "identifier": "IMPS/P2A/034610992057/0000000000"
+    },
+    "contacts": {
+        "contactTypeCode": [
+            "EM1",
+            "OF1",
+            "OT1",
+            "WAD",
+            "EMO",
+            "OT2",
+            "OT3",
+            "GS1"
+        ],
+        "contact": [
+            "rajneesh.rai@JUPITER.in",
+            "01244852094",
+            "01244852751",
+            "www.JUPITER.in",
+            "TROPS@JUPITER.IN",
+            "01244352500",
+            "01244352131",
+            "BANKSTATEMENT@JUPITER.IN"
+        ]
+    },
+    "payerDetails": {
+        "name": "",
+        "account": {
+            "id": "",
+            "identityType": ""
+        },
+        "bank": {
+            "name": "",
+            "bankCode": "",
+            "clearingSystemId": ""
+        }
+    },
+    "referenceIds": {
+        "endToEndId": "",
+        "txId": "",
+        "clearingSystemReference": ""
+    },
+    "additionalTransactionDescription": "",
+    "supplementaryTransactionDescription": "",
+    "transactionTimestamp": "2020-12-11T10: 43: 43",
+    "bankCode": "531",
+    "countryCode": "IN",
+    "timestamp": "2020-12-11T05:13:43.708Z",
+    "payeeDetails": {
+        "name": "John Doe",
+        "account": {
+            "id": "000001"
+        },
+        "bank": {
+            "name": "XYZ",
+            "bankCode": "0000"
+        }
+    },
+    "senderCorrespondentBank": {
+        "bankCode": "000"
+    },
+    "postingMode": ""
+}

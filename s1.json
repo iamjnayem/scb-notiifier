@@ -1,0 +1,94 @@
+{
+    "groupId": "GHK01234",
+    "accountIdentifier": {
+        "accountId": "44700912345",
+        "currencyCode": {
+            "isoCode": "HKD"
+        },
+        "bankCode": "SCBLHKHHXXX"
+    },
+    "eventDate": "2020-12-14",
+    "transactionIdentifier": {
+        "type": "Other",
+        "identifier": "447009123450000016862"
+    },
+    "adviceType": "Credit",
+    "valueDate": "2020-12-13",
+    "virtualAccountId": "",
+    "accountName": "",
+    "transactionCode": "07007",
+    "baiCode": "399",
+    "transactionDescription": "",
+    "postExecutionBalance": {
+        "currencyCode": "HKD",
+        "amount": 3022145.77
+    },
+    "preExecutionBalance": {
+        "currencyCode": "HKD",
+        "amount": 3020031.97
+    },
+    "transactionFreeText": [
+        "3812831234-LCLFZCV9AHUH9R",
+        "MR Jane Doe",
+        "FRN2020121300182812345 004 CXMRCH",
+        "098591741234",
+        "",
+        ""
+    ],
+    "transactionExtendedFreeText": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "transactionMultiLingualFreeText": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "transactionAmount": {
+        "currencyCode": "HKD",
+        "amount": 2113.8
+    },
+    "clientIdentifier": {
+        "type": "Other",
+        "identifier": ""
+    },
+    "externalIdentifier": {
+        "type": "Other",
+        "identifier": "3812831234-LCLFZCV9AHUH9R"
+    },
+    "contacts": {
+        "contactTypeCode": [],
+        "contact": []
+    },
+    "payerDetails": {
+        "name": "Jane Doe",
+        "account": {
+            "id": "098591746833",
+            "identityType": "BBAN"
+        },
+        "bank": {
+            "name": "",
+            "bankCode": "004",
+            "clearingSystemId": "004"
+        }
+    },
+    "referenceIds": {
+        "endToEndId": "3800835054-LCLFZCV9AHUH9R",
+        "txId": "447009123450000016862",
+        "clearingSystemReference": "FRN2020121300182811234"
+    },
+    "additionalTransactionDescription": "MR Jane Doe121300182811234",
+    "supplementaryTransactionDescription": "",
+    "transactionTimestamp": "2020-12-14T11:29:09",
+    "bankBranchCode": "000",
+    "countryCode": "HK",
+    "timestamp": "2020-12-13T03:29:09.763Z",
+    "postingMode": "O"
+}
